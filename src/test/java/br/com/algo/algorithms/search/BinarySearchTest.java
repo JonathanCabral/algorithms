@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class BinarySearchTest {
 
     @Test
-    @DisplayName("recupera valor de qualquer posicao no meio")
+    @DisplayName("Buscar Qualquer valor no meio do array")
     public void binarySearch() {
         int expected = 5;
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,14,17,19,20,42};
@@ -17,7 +17,7 @@ class BinarySearchTest {
     }
 
     @Test
-    @DisplayName("recupera valor na primeira posicao")
+    @DisplayName("Busca valor na primeira posicao do array")
     public void binarySearch2() {
         int expected = 0;
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,14,17,19,20,42};
@@ -26,7 +26,7 @@ class BinarySearchTest {
     }
 
     @Test
-    @DisplayName("recupera valor da ultima posicao")
+    @DisplayName("Busca valor na ultima posicao do array")
     public void binarySearch3() {
         int expected = 42;
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,14,17,19,20,42};
@@ -35,7 +35,7 @@ class BinarySearchTest {
     }
 
     @Test
-    @DisplayName("Nao encontra valor requisitado e retorna -1")
+    @DisplayName("Nao encontra valor e retorna -1")
     public void binarySearch4() {
         int[] arr = {0,1,2,3,5,6,7,8,9,10,14,17,19,20,42};
         int result = BinarySearch.search(arr, 43);
@@ -44,7 +44,7 @@ class BinarySearchTest {
 
     //with recursion
     @Test
-    @DisplayName("recursion - recupera valor de qualquer posicao no meio")
+    @DisplayName("recursion - Busca valor em qualquer posicao no meio do array")
     public void recursion() {
         int expected = 5;
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,14,17,19,20,42};
@@ -53,7 +53,7 @@ class BinarySearchTest {
     }
 
     @Test
-    @DisplayName("recursion - recupera valor na primeira posicao")
+    @DisplayName("recursion - Busca valor na posicao 0")
     public void recursion1() {
         int expected = 0;
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,14,17,19,20,42};
@@ -62,7 +62,7 @@ class BinarySearchTest {
     }
 
     @Test
-    @DisplayName("recursion - recupera valor da ultima posicao")
+    @DisplayName("recursion - Busca valor na ultima posicao")
     public void recursion2() {
         int expected = 42;
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,14,17,19,20,42};
@@ -71,11 +71,10 @@ class BinarySearchTest {
     }
 
     @Test
-    @DisplayName("recursion - Nao encontra valor requisitado e retorna -1")
+    @DisplayName("recursion - Nao encontra valor e retorna -1")
     public void recursion3() {
         int[] arr = {0,1,2,3,5,6,7,8,9,10,14,17,19,20,42};
         int result = BinarySearch.recursiveSearch(arr, 43);
         assertEquals(-1, result);
     }
-
 }
