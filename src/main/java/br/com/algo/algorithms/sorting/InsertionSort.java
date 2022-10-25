@@ -9,11 +9,8 @@ package br.com.algo.algorithms.sorting;
 public class InsertionSort {
     public static int[] sort(int[] arr) {
 
-        for(int i = 1; i < arr.length; i++) {
-            var atual = arr[i];
+        for(int i = 1; i < arr.length; i++)
             order(arr, i);
-        }
-
         return arr;
     }
 
