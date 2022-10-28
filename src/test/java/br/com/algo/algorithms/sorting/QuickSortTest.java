@@ -71,14 +71,6 @@ class QuickSortTest {
         assertArrayEquals(arr, result);
     }
 
-    @NotNull
-    private int[] getRandomNumbers(int from, int to) {
-        int[] arr = new int[999];
-        for (int i = 0; i < 999; i++)
-            arr[i] = new Random().nextInt(Math.abs(from - to));
-        return arr;
-    }
-
     @Test
     @DisplayName("Ordena lista com 1 registro")
     public void test6() {
@@ -117,6 +109,14 @@ class QuickSortTest {
         int[] expected = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[] result = QuickSort.sort(new int[]{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}, false);
         assertArrayEquals(expected, result);
+    }
+
+    @NotNull
+    private int[] getRandomNumbers(int from, int to) {
+        int[] arr = new int[999];
+        for (int i = 0; i < 999; i++)
+            arr[i] = new Random().nextInt(Math.abs(from - to));
+        return arr;
     }
 
 }

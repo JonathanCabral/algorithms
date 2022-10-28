@@ -8,8 +8,8 @@ import java.util.Random;
  * Worst Case - Todos os items já estão ordenados
  * Tip - Do not use quicksort with your list already sorted, or try to shuffle it before.
  *
- * @TimeComplexity - n(log(n))
- * @TimeComplexity - n(n^2)
+ * @TimeComplexity Best - n(log(n))
+ * @TimeComplexity Worst - n(n^2)
  */
 public class QuickSort {
 
